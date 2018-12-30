@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xqh.ad.tkmapper.mapper.IdfaCopyRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.xqh.ad.tkmapper.entity.IdfaCopyRecord">
+            <id column="id" property="id" jdbcType="INTEGER"></id>
+            <result column="request" property="request" jdbcType="VARCHAR"/>
+            <result column="fact" property="fact" jdbcType="VARCHAR"/>
+            <result column="state" property="state" jdbcType="TINYINT"/>
+            <result column="create_time" property="createTime" jdbcType="INTEGER"/>
+            <result column="update_time" property="updateTime" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="BaseColumn">
+            id,
+            request,
+            fact,
+            state,
+            create_time,
+            update_time
+    </sql>
+
+    <sql id="BasicFeildColumn">
+            id,
+            request,
+            fact,
+            state,
+            createTime,
+            updateTime
+    </sql>
+
+</mapper>
